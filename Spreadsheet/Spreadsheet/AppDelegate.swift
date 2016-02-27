@@ -13,10 +13,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var controller : SheetWindowController?
 
 
-    func applicationDidFinishLaunching(aNotification: NSNotification?) {
+    func applicationDidFinishLaunching(aNotification: NSNotification) {
         controller = SheetWindowController(windowNibName: "Sheet")
         controller?.showWindow(self)
     }
-
+    
 }
+
+
+
 
